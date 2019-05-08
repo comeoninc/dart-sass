@@ -951,6 +951,10 @@ class _EvaluateVisitor
     }, semiGlobal: true);
   }
 
+  Future<Value> visitForwardRule(ForwardRule node) async {
+    return null;
+  }
+
   Future<Value> visitFunctionRule(FunctionRule node) async {
     _environment.setFunction(UserDefinedCallable(node, _environment.closure()));
     return null;

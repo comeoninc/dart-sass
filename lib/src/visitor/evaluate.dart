@@ -5,7 +5,7 @@
 // DO NOT EDIT. This file was generated from async_evaluate.dart.
 // See tool/synchronize.dart for details.
 //
-// Checksum: ef520a902171c8d105ece12e7c84889e34f95d80
+// Checksum: 22c0c2e65de73c6c1458007af5f39cebd0d322a0
 //
 // ignore_for_file: unused_import
 
@@ -952,6 +952,10 @@ class _EvaluateVisitor
       }
       return null;
     }, semiGlobal: true);
+  }
+
+  Value visitForwardRule(ForwardRule node) {
+    return null;
   }
 
   Value visitFunctionRule(FunctionRule node) {
